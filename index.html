@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterD - Sri Lankan Rapper</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">MasterD</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>MasterD</h1>
+            <p>Sri Lanka's Premier Hip-Hop Artist</p>
+            <a href="#music" class="btn">Listen Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/masterd-profile.jpg" alt="MasterD">
+                </div>
+                <div class="about-text">
+                    <h2>About MasterD</h2>
+                    <p>MasterD is a groundbreaking Sri Lankan rapper who has revolutionized the local hip-hop scene with his unique blend of Sinhala lyrics and international rap styles. Born in Colombo, he began his musical journey at a young age, drawing inspiration from both global hip-hop icons and Sri Lankan musical traditions.</p>
+                    <p>With multiple hit singles and collaborations with international artists, MasterD has established himself as a force to be reckoned with in the Asian hip-hop community. His lyrics often address social issues, personal struggles, and the realities of urban life in Sri Lanka.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-spotify"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="music">
+        <div class="container">
+            <h2>Latest Releases</h2>
+            <div class="music-grid">
+                <div class="music-item">
+                    <div class="album-cover">
+                        <img src="images/album-cover1.jpg" alt="Album 1">
+                        <button class="play-btn" data-audio="audio/track1.mp3"><i class="fas fa-play"></i></button>
+                    </div>
+                    <h3>Colombo Streets</h3>
+                    <p>Single • 2023</p>
+                </div>
+                <div class="music-item">
+                    <div class="album-cover">
+                        <img src="images/album-cover2.jpg" alt="Album 2">
+                        <button class="play-btn" data-audio="audio/track2.mp3"><i class="fas fa-play"></i></button>
+                    </div>
+                    <h3>Island King</h3>
+                    <p>EP • 2022</p>
+                </div>
+                <div class="music-item">
+                    <div class="album-cover">
+                        <img src="images/album-cover1.jpg" alt="Album 3">
+                        <button class="play-btn" data-audio="audio/track3.mp3"><i class="fas fa-play"></i></button>
+                    </div>
+                    <h3>Hustle Never Sleeps</h3>
+                    <p>Single • 2021</p>
+                </div>
+            </div>
+            <div class="audio-player hidden">
+                <audio id="audio-player" controls>
+                    <source src="" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <button id="close-player" class="btn">Close Player</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="videos">
+        <div class="container">
+            <h2>Music Videos</h2>
+            <div class="video-grid">
+                <div class="video-item">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/example1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3>Colombo Streets - Official Video</h3>
+                </div>
+                <div class="video-item">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/example2" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3>Island King - Visualizer</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Photo Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="images/masterd-banner.jpg" alt="MasterD Performance"></div>
+                <div class="gallery-item"><img src="images/masterd-profile.jpg" alt="MasterD Studio"></div>
+                <div class="gallery-item"><img src="images/album-cover1.jpg" alt="MasterD Concert"></div>
+                <div class="gallery-item"><img src="images/album-cover2.jpg" alt="MasterD Interview"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Booking & Management</h3>
+                    <p><i class="fas fa-envelope"></i> bookings@masterd.lk</p>
+                    <p><i class="fas fa-phone"></i> +94 76 123 4567</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-spotify"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 MasterD. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
