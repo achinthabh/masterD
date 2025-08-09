@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MasterD - Sri Lankan Rapper</title>
+    <title>MASTERD | Sri Lankan Hip-Hop Icon</title>
+    <meta name="description" content="Official website of MASTERD, Sri Lanka's premier hip-hop artist">
+    <link rel="icon" href="images/about.jpeg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo">MasterD</a>
+            <a href="#" class="logo">MASTER<span>D</span></a>
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -24,30 +30,47 @@
                 <li><a href="#videos">Videos</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
+                
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>MasterD</h1>
-            <p>Sri Lanka's Premier Hip-Hop Artist</p>
-            <a href="https://open.spotify.com/artist/4V61EgyV8GpTGVyoMVHM26" class="btn">Listen Now</a>
+        <div class="hero-content" data-aos="fade-up">
+            <h1 class="hero-title">MASTER<span>D</span></h1>
+            <p class="hero-subtitle">The Voice of Sri Lankan Hip-Hop</p>
+            <div class="hero-btns">
+                <a href="#music" class="btn btn-primary">Listen Now</a>
+                <a href="#videos" class="btn btn-outline">Watch Videos</a>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about section-padding">
         <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About <span>MASTERD</span></h2>
             <div class="about-content">
-                <div class="about-image">
-                    <img src="images/about.jpeg" alt="MasterD">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="images/about.jpeg" alt="MASTERD">
                 </div>
-                <div class="about-text">
-                    <h2>About MasterD</h2>
-                    <p>MasterD is a groundbreaking Sri Lankan rapper who has revolutionized the local hip-hop scene with his unique blend of Sinhala lyrics and international rap styles. Born in Colombo, he began his musical journey at a young age, drawing inspiration from both global hip-hop icons and Sri Lankan musical traditions.</p>
-                    <p>With multiple hit singles and collaborations with international artists, MasterD has established himself as a force to be reckoned with in the Asian hip-hop community. His lyrics often address social issues, personal struggles, and the realities of urban life in Sri Lanka.</p>
+                <div class="about-text" data-aos="fade-left">
+                    <p>MASTERD is revolutionizing Sri Lankan hip-hop with his unique blend of Sinhala lyrics and global rap styles. Hailing from Colombo, his music reflects urban Sri Lankan life with raw authenticity.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">250K+</span>
+                            <span class="stat-label">Followers</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Tracks</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10M+</span>
+                            <span class="stat-label">Streams</span>
+                        </div>
+                    </div>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -60,100 +83,92 @@
     </section>
 
     <!-- Music Section -->
-    <section id="music" class="music">
+    <section id="music" class="music section-padding">
         <div class="container">
-            <h2>Latest Releases</h2>
+            <h2 class="section-title" data-aos="fade-up">Latest <span>Releases</span></h2>
             <div class="music-grid">
-                <div class="music-item">
+                <div class="music-item" data-aos="fade-up">
                     <div class="album-cover">
-                        <img src="images/album-cover1.jpg" alt="Album 1">
-                        <button class="play-btn" data-audio="audio/track1.mp3"><i class="fas fa-play"></i></button>
+                        <img src="images/album_cover1.jpg" alt="Album Cover">
+                        <button class="play-btn"><i class="fas fa-play"></i></button>
                     </div>
                     <h3>Colombo Streets</h3>
                     <p>Single • 2023</p>
                 </div>
-                <div class="music-item">
+                <div class="music-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="album-cover">
-                        <img src="images/album-cover2.jpg" alt="Album 2">
-                        <button class="play-btn" data-audio="audio/track2.mp3"><i class="fas fa-play"></i></button>
+                        <img src="images/album_cover2.jpg" alt="Album Cover">
+                        <button class="play-btn"><i class="fas fa-play"></i></button>
                     </div>
                     <h3>Island King</h3>
                     <p>EP • 2022</p>
                 </div>
-                <div class="music-item">
+                <div class="music-item" data-aos="fade-up" data-aos-delay="200">
                     <div class="album-cover">
-                        <img src="images/album-cover1.jpg" alt="Album 3">
-                        <button class="play-btn" data-audio="audio/track3.mp3"><i class="fas fa-play"></i></button>
+                        <img src="images/album_cover3.jpg" alt="Album Cover">
+                        <button class="play-btn"><i class="fas fa-play"></i></button>
                     </div>
                     <h3>Hustle Never Sleeps</h3>
                     <p>Single • 2021</p>
                 </div>
             </div>
-            <div class="audio-player hidden">
-                <audio id="audio-player" controls>
-                    <source src="" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-                <button id="close-player" class="btn">Close Player</button>
-            </div>
         </div>
     </section>
 
     <!-- Videos Section -->
-    <section id="videos" class="videos">
+    <section id="videos" class="videos section-padding">
         <div class="container">
-            <h2>Music Videos</h2>
+            <h2 class="section-title" data-aos="fade-up">Music <span>Videos</span></h2>
             <div class="video-grid">
-                <div class="video-item">
+                <div class="video-item" data-aos="fade-up">
                     <div class="video-wrapper">
-                        <iframe src="https://www.youtube.com/embed/example1" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="https://youtu.be/UI7mB9CbV7U?si=jYZDCKPTDLBEVdH3/embed/example1" allowfullscreen></iframe>
                     </div>
-                    <h3>Colombo Streets - Official Video</h3>
+                    <h3>Pampori</h3>
                 </div>
-                <div class="video-item">
+                <div class="video-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="video-wrapper">
-                        <iframe src="https://www.youtube.com/embed/example2" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="https://youtu.be/7BvUsWJsN-c?si=sk9E8rD2mJNcLKnc" allowfullscreen></iframe>
                     </div>
-                    <h3>Island King - Visualizer</h3>
+                    <h3>Captain</h3>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
+    <section id="gallery" class="gallery section-padding">
         <div class="container">
-            <h2>Photo Gallery</h2>
+            <h2 class="section-title" data-aos="fade-up">Photo <span>Gallery</span></h2>
             <div class="gallery-grid">
-                <div class="gallery-item"><img src="images/masterd-banner.jpg" alt="MasterD Performance"></div>
-                <div class="gallery-item"><img src="images/masterd-profile.jpg" alt="MasterD Studio"></div>
-                <div class="gallery-item"><img src="images/album-cover1.jpg" alt="MasterD Concert"></div>
-                <div class="gallery-item"><img src="images/album-cover2.jpg" alt="MasterD Interview"></div>
+                <div class="gallery-item" data-aos="zoom-in">
+                    <img src="images/concert.jpg" alt="MASTERD">
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="images/performance.jpg" alt="MASTERD">
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="images/studio.jpg" alt="MASTERD">
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact section-padding">
         <div class="container">
-            <h2>Get In Touch</h2>
+            <h2 class="section-title" data-aos="fade-up">Get In <span>Touch</span></h2>
             <div class="contact-content">
-                <div class="contact-info">
+                <div class="contact-info" data-aos="fade-right">
                     <h3>Booking & Management</h3>
                     <p><i class="fas fa-envelope"></i> bookings@masterd.lk</p>
                     <p><i class="fas fa-phone"></i> +94 76 123 4567</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-spotify"></i></a>
-                    </div>
                 </div>
-                <form class="contact-form">
+                <form class="contact-form" data-aos="fade-left">
                     <input type="text" placeholder="Your Name" required>
                     <input type="email" placeholder="Your Email" required>
                     <textarea placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn">Send Message</button>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
         </div>
@@ -162,14 +177,29 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2023 MasterD. All Rights Reserved.</p>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">MASTER<span>D</span></a>
+                    <p>Sri Lanka's Hip-Hop Icon</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-spotify"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> MASTERD. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
