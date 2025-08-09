@@ -63,13 +63,52 @@ document.addEventListener('DOMContentLoaded', function() {
         offset: 100
     });
     
+    // Audio Player Functionality
+    let currentlyPlaying = null;
+
     // Play button functionality
     const playButtons = document.querySelectorAll('.play-btn');
     playButtons.forEach(button => {
         button.addEventListener('click', function(e) {
             e.stopPropagation();
-            // Add your audio player functionality here
-            console.log('Play button clicked');
+            
+            // Get the audio element within the same music-item
+            const musicItem = this.closest('.music-item');
+            const audioElement = musicItem.querySelector('audio');
+            const playIcon = this.querySelector('i');
+            
+            // If this is the currently playing audio, pause it
+            if (currentlyPlaying === audioElement) {
+                audioElement.pause();
+                currentlyPlaying = null;
+                playIcon.classList.remove('fa-pause');
+                playIcon.classList.add('fa-play');
+                return;
+            }
+            
+            // Pause any currently playing audio
+            if (currentlyPlaying) {
+                currentlyPlaying.pause();
+                currentlyPlaying.currentTime = 0;
+                const currentButton = currentlyPlaying.closest('.music-item').querySelector('.play-btn i');
+                if (currentButton) {
+                    currentButton.classList.remove('fa-pause');
+                    currentButton.classList.add('fa-play');
+                }
+            }
+            
+            // Play the selected audio
+            audioElement.play();
+            currentlyPlaying = audioElement;
+            playIcon.classList.remove('fa-play');
+            playIcon.classList.add('fa-pause');
+            
+            // Update when audio ends
+            audioElement.onended = function() {
+                playIcon.classList.remove('fa-pause');
+                playIcon.classList.add('fa-play');
+                currentlyPlaying = null;
+            };
         });
     });
     
